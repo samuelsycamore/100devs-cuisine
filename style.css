@@ -1,13 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display:wght@700&display=swap');
+
+/*
+
+orange: #ff8630;
+black: #0d0e23;
+light bg: #edf3f3;
+*/
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #fff;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #0d0e23;
+}
+
+a, a:link, a:visited, a:active, a:hover{
+  text-decoration: none;
+  color: #0d0e23;
+}
+
+h1, h3{
+  font-family: 'Playfair Display', serif;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 2rem;
+  color: #ff8630
+}
+
+h3{
+  font-size: 3rem;
+}
 
 header{
   background-image: url("cuisine-hero.png");
   height: 100vh;
   background-position: right;
   background-size: cover;
+}
+
+.about{
+  background-image: url("cuisine-about.png");
+  height: 100vh;
+  background-position: right;
+  background-size: cover;
+}
+
+.menu{
+  background: #edf3f3;
 }
