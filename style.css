@@ -20,7 +20,7 @@ html{
 body{
   background-color: #fff;
   font-family: 'Noto Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #0d0e23;
 }
 
@@ -34,7 +34,8 @@ h1, h3{
 }
 
 h1{
-  font-size: 4rem;
+  font-size: 7rem;
+  line-height: 7.5rem;
 }
 
 h2{
@@ -46,11 +47,122 @@ h3{
   font-size: 3rem;
 }
 
+ul{
+  list-style-type: none;
+}
+
+li{
+  display: inline-block;
+}
+
+li > img{
+  display: inline;
+}
+
+button{
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 2rem;
+  margin: 2rem 0;
+  text-decoration: none;
+  background: #ff8630;
+  color: #fff;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out,
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus{
+    background: #161f2a;
+    color: #f1f1f1;
+}
+
+button:focus{
+    outline: 1px solid #f1f1f1;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+.hero-btn{
+  border-radius: 0 5px 5px 0;
+  padding: 1rem 1rem 1rem 0;
+  margin: 3rem 0;
+  width: 20%;
+  border: 1px solid #ff8630;
+}
+
+input{
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 5px 0 0 5px;
+  padding: 1rem 0 1rem 1rem;
+  margin: 3rem 0;
+  text-decoration: none;
+  background: #e1e9ef;
+  color: black;
+  font-family: 'Noto Sans',sans-serif;
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 3rem 8rem 0 0;
+}
+
+nav li{
+  padding-right: 3rem;
+}
+
+nav img{
+  padding-right: 2rem;
+}
+
+.hamburger{
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  left: 5rem;
+}
+
+.line {
+  background: black;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 3px;
+}
+
+
 header{
   background-image: url("cuisine-hero.png");
   height: 100vh;
   background-position: right;
   background-size: cover;
+}
+
+.hero{
+  width: 60%;
+  padding: 11rem;
+}
+
+.social-icon{
+  width: 2rem;
+}
+
+.social-stats > a{
+  padding-right: 3rem;
 }
 
 .about{
@@ -62,4 +174,63 @@ header{
 
 .menu{
   background: #edf3f3;
+}
+
+
+@media (max-width: 1020px){
+  h1{
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+  input{
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+  }
+  .hero-btn{
+    width: 100%;
+    margin-top: 0;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 800px){
+  h1{
+    font-size: 7rem;
+    line-height: 7.5rem;
+  }
+
+  header{
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+  }
+  .hero{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+}
+
+@media (max-width: 600px){
+  h1{
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+  .hamburger{
+    display: inline-block;
+  }
+
+  .nav-links{
+    display:none;
+  }
+  header{
+    background-image: none;
+    height: 100vh;
+  }
+  .hero{
+    padding: 2rem;
+  }
 }
